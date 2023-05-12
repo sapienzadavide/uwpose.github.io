@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>UW Dataset</title>
+
+  <!-- slider stylesheet -->
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              UW Dataset
+
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="overview.html"> Overview </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="benchmarks.html"> Benchmarks </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <a class="nav-link" href="download.html"> Download </a>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="box">
+        <div class="img-box">
+          <img src="images/dataset-illu.jpg" alt="">
+        </div>
+      </div>
+      <div class="heading_container">
+        <h2>
+          About Dataset
+        </h2>
+      </div>
+      <div class="box">
+        <div class="detail-box">
+          <p>
+            We have developed a comprehensive dataset for object detection and 6D pose estimation in both underwater and dry environments, comprising both synthetic and real-world data. The dataset focuses on four objects of interest for underwater intervention.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Underwater Intervention Application
+        </h2>
+      </div>
+
+      <div class="box">
+        <div class="imag-box">
+          <img src="images/test.gif" alt="">
+        </div>
+      </div>      
+      
+      <div class="box">
+        <div class="detail-box">
+          <p>
+            An example showing the environmental conditions of intervention.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Type of data:
+        </h2>
+      </div>
+      <div class="box">
+        <div class="detail-box">
+          <p>
+            <ul>
+              <li>RGB</li>
+              <li>Depth Map</li>
+              <li>Mask for single object</li>
+              <li>CAD object models</li>
+              <li>2D ground truth labels</li>
+              <li>6D ground truth labels (rotation matrix 3x3 and translation vector 1x3)</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Dataset dimensions:
+        </h2>
+      </div>
+      <div class="box">
+        <div class="detail-box">
+          <p>
+            - n sysntetic images
+            - m real-world images 
+            - 640 x 480
+            - k GB 
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Data diversity:
+        </h2>
+      </div>
+      <div class="box">
+        <div class="detail-box">
+          <p>
+            <ul>
+              <li>4 objects</li>
+              <li>Syntetic data:</li>
+              <ul>
+                <li>different sandy background textures</li>
+                <li>color lights change randomly, with values chosen in specific ranges to avoid black lights</li>
+                <li>lights directions change randomly (lights change their directions starting from the camera position for max 80°)</li>
+                <li>object poses are chosen randomly</li>
+              </ul>
+              <li>Real data:</li>
+              <ul>
+                <li>10 different scenes</li>
+                <li>42.5% of images acquired in 4 different underwater conditions</li>
+                <li>57.5% images acquired in 6 different dry scenes</li>
+              </ul>
+            </ul>
+            <!-- - 4 syntetic sandy background + plain background 
+            - 11 real-world scenario
+            - 4 different object: one obj per image, one instance multi objs per image, multi instances per image 
+            - 2D label and 6D label  -->
+
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Classes definition:
+        </h2>
+      </div>
+      <div class="box">
+        <div class="detail-box">
+          <p>
+            <ul>
+              <li>1: Box</li>
+              <li>2: Cup</li>
+              <li>3: Jug</li>
+              <li>4: Hotstab</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end about section -->
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      &copy; 2023 Davide Sapienza By
+      <a href="https://html.design/">Free Html Templates</a>
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- owl carousel script 
+    -->
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 0,
+      navText: [],
+      center: true,
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        1000: {
+          items: 3
+        }
+      }
+    });
+  </script>
+  <!-- end owl carousel script -->
+</body>
+
+</html>
