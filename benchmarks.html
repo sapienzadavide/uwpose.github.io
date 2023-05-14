@@ -215,6 +215,78 @@
           </p>
         </div>
       </div>
+      <div class="box">
+        <div class="detail-box">
+          <p>
+            Despite our dataset being mostly composed of symmetrical objects, we achieved better results when comparing with similar state-of-the-art methodologies. The following Table for the hotstab and the jug compared three different methods in terms of ADD, ADI and mAP. In particular, we chose for comparison YOLO-6D [1], which is a feature-based approach that uses Perspective’n’Point (PnP) algorithm, and EfficientPose [2], a full-frame, single-shot
+method which achieves one of the higher results on LineMod Dataset. YOLO-6D and EfficientPose were trained with different input and batch sizes, different learning rates and
+Adam momentum as optimizer. On the other hand, for EfficientPose the best performance is achieved with a batch size equal to 1, a learning rate of 0.0001 and 500 epochs. To ensure comparability with the other two methods, we opted for lighter versions by selecting φ equal to 0 as scaling hyperparameter. Despite the higher results on LineMod Dataset, EfficientPose achieves very low performance scores. On the other hand, YOLO-6D achieves higher performances with respect to EfficientPose, but it does not reach our pipeline percentage scores.
+
+          </p>
+        
+        </div>
+        <div class="detail-box">
+          <table>
+            <tr>
+              <th>Hotstab</th>
+              <th>ADD</th>
+              <th>ADI</th>
+              <th>mAP (θ=0.5)</th>
+            </tr>
+            <tr>
+              <td>EfficientPose</td>
+              <td>1.32%</td>                 
+              <td>8.65%</td>
+              <td>0.7521</td>
+            </tr>
+            <tr>
+              <td>Yolo6D</td>
+              <td>9.58% </td>
+              <td>36.71% </td>
+              <td>0.77</td>
+            </tr>
+            <tr>
+              <td>YOLOv4</td>
+              <td>11.4%</td>
+              <td>44.0%</td>
+              <td>0.99%</td>
+            </tr>
+          </table>
+        </div>
+        <div class="detail-box">
+          <table>
+            <tr>
+              <th>Jug</th>
+              <th>ADD</th>
+              <th>ADI</th>
+              <th>mAP (θ=0.5)</th>
+            </tr>
+            <tr>
+              <td>EfficientPose</td>
+              <td>23%</td>                 
+              <td>54.8%</td>
+              <td>0.7341</td>
+            </tr>
+            <tr>
+              <td>Yolo6D</td>
+              <td>26.50% </td>
+              <td>58.44% </td>
+              <td>0.816</td>
+            </tr>
+            <tr>
+              <td>YOLOv4</td>
+              <td>29.2%</td>
+              <td>78.2%</td>
+              <td>0.995%</td>
+            </tr>
+          </table>
+        </div>
+        <div class="'detail-box">
+          [1] Tekin, Bugra, Sudipta N. Sinha, and Pascal Fua. "Real-time seamless single shot 6d object pose prediction." Proceedings of the IEEE conference on computer vision and pattern recognition. 2018.
+
+          [2] Bukschat, Yannick, and Marcus Vetter. "EfficientPose: An efficient, accurate and scalable end-to-end 6D multi object pose estimation approach." arXiv preprint arXiv:2011.04307 (2020).
+        </div>
+      </div>
     </div>
   </section>
   <!-- end info_section -->
